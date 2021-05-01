@@ -1,0 +1,18 @@
+{
+  "pipelineId" : "clickstream843cc7ea-1f16-4ad7-874c-d9c7d8b2750b",
+  "title" : "clickstream",
+  "description" : "",
+  "created" : 1566383757323,
+  "lastModified" : 1566392762470,
+  "creator" : "admin",
+  "lastModifier" : "admin",
+  "lastRev" : "0",
+  "uuid" : "492771d3-8d57-4961-8ccd-2370ad4e4c30",
+  "valid" : true,
+  "metadata" : {
+    "labels" : [ ]
+  },
+  "name" : "clickstream843cc7ea-1f16-4ad7-874c-d9c7d8b2750b",
+  "sdcVersion" : "3.9.0",
+  "sdcId" : "1b3426c0-c3ff-11e9-909e-897bc344d508"
+}
