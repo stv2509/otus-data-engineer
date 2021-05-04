@@ -1,4 +1,6 @@
 .DS_Store
+sdc-data/
+credentials/
 .idea/
 target/
 *.csv

@@ -3,11 +3,11 @@ register-postgres:
 
 create-consumer:
 	docker-compose -f docker-compose.yml exec kafka /kafka/bin/kafka-console-consumer.sh \
-    --bootstrap-server kafka:9092 \
-    --from-beginning \
-    --property print.key=true \
+		--bootstrap-server kafka:9092 \
+		--from-beginning \
+		--property print.key=true \
 		--property print.value=false \
-    --topic dbserver1.inventory.customers
+		--topic dbserver1.inventory.customers
 
 get-jupyter-token:
 	docker-compose -f docker-compose.yml exec jupyter-local jupyter notebook list
@@ -15,5 +15,5 @@ get-jupyter-token:
 run-streamer:
 	docker-compose  \
 	-f docker-compose.yml exec jupyter-local /usr/local/spark/bin/spark-submit \
-	--packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.3 \
+	--packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.1 \
 	/home/jovyan/work/cdc_reader.py

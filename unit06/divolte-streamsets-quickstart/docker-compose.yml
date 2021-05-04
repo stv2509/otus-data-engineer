@@ -29,7 +29,7 @@ services:
     build:
       context: "."
       args:
-        SDC_LIBS: streamsets-datacollector-apache-kafka_2_0-lib,streamsets-datacollector-google-cloud-lib
+        SDC_LIBS: streamsets-datacollector-apache-kafka_2_0-lib,streamsets-datacollector-google-cloud-lib,streamsets-datacollector-elasticsearch_7-lib
     environment:
       DIVOLTE_KAFKA_BROKER_LIST: kafka:9092
     ports:
